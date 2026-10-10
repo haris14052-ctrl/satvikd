@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Satvik Dave — Finance student with experience in equity broking, technical analysis, and portfolio management.">
+  <title>Satvik Dave | Finance Resume</title>
+  <style>
+    :root {
+      --navy: #10243a;
+      --blue: #176b87;
+      --teal: #26a69a;
+      --ink: #243447;
+      --muted: #65758b;
+      --paper: #ffffff;
+      --wash: #f2f6f9;
+      --line: #dce5ec;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--wash);
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .topbar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(16,36,58,.96); color: #fff;
+      box-shadow: 0 4px 18px rgba(10,30,50,.12);
+      backdrop-filter: blur(10px);
+    }
+    .nav {
+      max-width: 1080px; margin: auto; padding: 14px 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 18px;
+    }
+    .brand { font-weight: 800; letter-spacing: .04em; white-space: nowrap; }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 17px; justify-content: flex-end; }
+    .navlinks a { color: #e9f3f8; text-decoration: none; font-size: .88rem; }
+    .navlinks a:hover { color: #72e0d1; }
+    .hero {
+      background: radial-gradient(circle at 85% 15%, rgba(38,166,154,.32), transparent 32%),
+                  linear-gradient(135deg, #10243a, #164a68);
+      color: white; padding: 78px 24px 72px;
+    }
+    .hero-inner { max-width: 1000px; margin: auto; }
+    .eyebrow { color: #86e2d5; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.7rem); line-height: 1.05; margin: 12px 0; letter-spacing: -.04em; }
+    .hero p { max-width: 680px; color: #dceaf2; font-size: 1.1rem; margin: 18px 0 24px; }
+    .contact { display: flex; flex-wrap: wrap; gap: 12px 22px; }
+    .contact a, .contact span { color: #fff; text-decoration: none; }
+    .contact a { border-bottom: 1px solid rgba(255,255,255,.4); }
+    .pill {
+      display: inline-block; margin-top: 27px; padding: 10px 16px; border-radius: 999px;
+      color: #10243a; background: #86e2d5; font-weight: 750; text-decoration: none;
+    }
+    main { max-width: 1000px; margin: -24px auto 0; padding: 0 24px 60px; position: relative; }
+    section {
+      background: var(--paper); border: 1px solid var(--line); border-radius: 18px;
+      padding: clamp(22px, 4vw, 36px); margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(16,36,58,.045);
+    }
+    .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-mark { width: 8px; height: 30px; border-radius: 8px; background: var(--teal); flex: 0 0 auto; }
+    h2 { margin: 0; font-size: 1.35rem; color: var(--navy); letter-spacing: -.02em; }
+    .summary { font-size: 1.04rem; margin: 0; }
+    .entry { padding: 0 0 22px; margin-bottom: 22px; border-bottom: 1px solid var(--line); }
+    .entry:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+    .entry-top { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 5px 18px; }
+    h3 { margin: 0; font-size: 1.08rem; color: var(--navy); }
+    .date { color: var(--blue); font-size: .9rem; font-weight: 700; }
+    .subline { color: var(--muted); margin: 3px 0 10px; }
+    ul { margin: 8px 0 0; padding-left: 21px; }
+    li { padding: 2px 0; }
+    .skill-group { margin: 0 0 13px; }
+    .skill-group:last-child { margin-bottom: 0; }
+    .skill-group strong { color: var(--navy); }
+    .footer { text-align: center; color: var(--muted); padding: 0 20px 32px; font-size: .9rem; }
+    @media (max-width: 700px) {
+      .nav { align-items: flex-start; flex-direction: column; padding: 12px 18px; }
+      .navlinks { justify-content: flex-start; gap: 8px 14px; }
+      .hero { padding: 55px 20px 58px; }
+      main { padding: 0 14px 40px; }
+      section { border-radius: 14px; }
+    }
+    @media print {
+      .topbar, .pill { display: none; }
+      body { background: white; }
+      .hero { padding: 30px; }
+      main { margin-top: 0; }
+      section { box-shadow: none; break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="brand">SATVIK DAVE</div>
+      <div class="navlinks">
+        <a href="#summary">Summary</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </nav>
+  </header>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Finance • Equity Broking • Analysis</div>
+      <h1>Satvik Dave</h1>
+      <p>Finance student pursuing BBA with hands-on experience in equity broking, technical analysis, and portfolio management.</p>
+      <div class="contact">
+        <a href="mailto:satvikdave9@gmail.com">satvikdave9@gmail.com</a>
+        <span>Pune, India</span>
+      </div>
+      <a class="pill" href="#experience">Explore my resume ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="summary">
+      <div class="section-head"><span class="section-mark"></span><h2>Summary</h2></div>
+      <p class="summary">Finance student pursuing BBA with hands-on experience in equity broking, technical analysis, and portfolio management. Skilled in chart analysis, candlestick patterns, and stock market research. Experienced in brokerage operations including client account handling, KYC compliance, and trade execution. Proficient in Tally Prime and Advanced Excel with strong analytical abilities.</p>
+    </section>
+
+    <section id="experience">
+      <div class="section-head"><span class="section-mark"></span><h2>Experience</h2></div>
+      <article class="entry">
+        <div class="entry-top">
+          <h3>Gaurav Investments (Sub-Broker of Sushil Finance)</h3>
+          <span class="date">Jan 2025 – May 2026</span>
+        </div>
+        <div class="subline">Equity Broking Operations · Pune, India</div>
+        <ul>
+          <li>Assisted in equity trading operations and executed real-time trades for clients based on market conditions.</li>
+          <li>Performed technical analysis using charts and candlestick patterns to identify trading opportunities.</li>
+          <li>Managed client portfolio tracking and performance analysis.</li>
+          <li>Handled back-office operations including account opening, Re-KYC, and client data updates.</li>
+          <li>Worked on SLBM (Securities Lending and Borrowing Mechanism) processes.</li>
+          <li>Analyzed client trading reports and financial summaries to support decision-making.</li>
+        </ul>
+      </article>
+      <article class="entry">
+        <div class="entry-top">
+          <h3>Accounting and Data Work</h3>
+          <span class="date">Jan 2024 – Oct 2024</span>
+        </div>
+        <div class="subline">Finance &amp; Data Assistant · Pune, India</div>
+        <ul>
+          <li>Performed data entry and financial data analysis to support accurate financial record-keeping and decision-making.</li>
+          <li>Assisted in preparation of tax documents and compliance reports, ensuring timely and error-free submissions.</li>
+          <li>Maintained consistency and accuracy across financial records through systematic validation and verification processes.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="education">
+      <div class="section-head"><span class="section-mark"></span><h2>Education</h2></div>
+      <article class="entry">
+        <div class="entry-top"><h3>Savitribai Phule Pune University</h3><span class="date">2022 – 2025</span></div>
+        <div class="subline">Bachelor of Business Administration (Finance) · Pune, India</div>
+      </article>
+      <article class="entry">
+        <div class="entry-top"><h3>ASDB Dadawala Jr. College</h3><span class="date">2020 – 2022</span></div>
+        <div class="subline">Higher Secondary Certificate (HSC) · Pune, India</div>
+      </article>
+      <article class="entry">
+        <div class="entry-top"><h3>Mahaveer English Medium School</h3><span class="date">2020</span></div>
+        <div class="subline">Secondary School Certificate (SSC) · Pune, India</div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <div class="section-head"><span class="section-mark"></span><h2>Skills</h2></div>
+      <p class="skill-group"><strong>Finance Skills:</strong> Technical Analysis, Portfolio Analysis, Stock Market Research, Equity Trading</p>
+      <p class="skill-group"><strong>Tools:</strong> Tally Prime, Advanced Excel</p>
+      <p class="skill-group"><strong>Soft Skills:</strong> Communication, Teamwork, Time Management</p>
+    </section>
+    <div class="footer">Satvik Dave · Resume Website</div>
+  </main>
+</body>
+</html>
